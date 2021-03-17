@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Counter</title>
+    <link rel='stylesheet' href='style.css'>
+    <script src='logic.js'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class='con' id='con1'>
+        <h1 id='con1name'>Contestent One</h1>
+        <div id='con1markdiv'>
+            <p>Marks</p>
+            <p id='con1marks'>0</p>
+        </div>
+        <div>
+            <button id='buttonin3' onclick="con1marksadd()">+</button>
+            <button id='buttonin4' onclick="con1markssub()">-</button>
+        </div>
+    </div>
+
+    <div class='con' id='con2'>
+        <h1 id='con2name'>Contestent Two</h1>
+        <div id='con2markdiv'>
+            <p>Marks</p>
+            <p id='con2marks'>0</p>
+        </div>
+        
+        <div>
+            <button id ='buttonin1' onclick="con2marksadd()">+</button>
+            <button id ='buttonin2' onclick="con2markssub()">-</button>
+        </div>
+    </div>
+
+    <div id="input">
+        <input type='text' name='con1namei' id='con1namei' placeholder='Contestant 1 Name'>
+        <input type='text' name='con2namei' id='con2namei' placeholder='Contestant 2 Name'>
+        <input type="submit" id='nameup' onclick="nameup()">
+    </div>
+
+    <div id='colormodes'>
+        <button onclick='darkmode()'>Dark</button>
+        <button onclick='lightmode()'>Light</button>
+    </div>
+</body>
+
+</html>
