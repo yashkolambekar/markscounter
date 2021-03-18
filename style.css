@@ -10,9 +10,14 @@ body{
     justify-content: center;
     align-items: center;
     font-family:"Poppins", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+@media(max-width:425px){
+    body{
+        flex-direction: column;
+    }  
+}
 .con{
     height:400px;
     width:300px;
@@ -22,12 +27,40 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
+}
+
+@media(max-width:425px){
+    .con{
+        width:250px;
+        height: 250px;
+        max-height: 400px;
+        max-width: 400px;
+        margin: 50px;
+    }   
+
+    .con:nth-child(1){
+        margin-bottom: 15px;
+    }
+
+    .con:nth-child(2){
+        margin-top: 10px;
+    }
 }
 
 .con h1{
     font-size:25px;
     font-weight: 800;
     margin-top: 30px;
+}
+
+@media(max-width:425px){
+    .con h1{
+        font-size:18px;
+        margin-top: 20px;
+        padding:0px 20px;
+        text-align: center;
+    }   
 }
 
 .con div:nth-child(2){
@@ -43,6 +76,12 @@ body{
     font-weight: 800;
 }
 
+@media(max-width:425px){
+    .con div:nth-child(2){
+        margin-top: 20px;
+    }   
+}
+
 .con div p:nth-child(2){
     font-size: 30px;
     margin-top: 10px;
@@ -50,6 +89,12 @@ body{
 
 .con div:nth-child(3){
     margin-top: 50px;
+}
+
+@media(max-width:425px){
+    .con div:nth-child(3){
+        margin-top: 20px;
+    }   
 }
 
 .con div:nth-child(3) button{
@@ -95,6 +140,12 @@ body{
     padding:5px 20px;
 }
 
+@media(max-width:425px){
+    #input input{
+        font-size: 15px;
+    }   
+}
+
 #colormodes{
     position: absolute;
     right: 10px;
@@ -105,4 +156,22 @@ body{
     border:none;
     outline:none;
     padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media(max-width:425px){
+    #colormodes button{
+        font-size: 10px;
+    }   
+}
+
+#colormodes button:nth-child(1){
+    background: rgba(40,40,40,1);
+    color: white;
+}
+
+#colormodes button:nth-child(2){
+    background: rgba(255,255,255,1);
+    color:rgba(0,0,0,1);
 }

@@ -25,6 +25,8 @@ function nameup(){
     document.getElementById('con1name').innerHTML = document.getElementById('con1namei').value;
     document.getElementById('con2name').innerHTML = document.getElementById('con2namei').value;
     document.getElementById('input').style.display = 'none';
+    document.getElementById('con1').style.display = 'flex';
+    document.getElementById('con2').style.display = 'flex';
 }
 
 function darkmode(){
