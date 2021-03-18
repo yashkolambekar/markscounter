@@ -1,3 +1,3 @@
-Inspired by Padhega India
-Just polished it a bit
+Inspired by Padhega India<br>
+Just polished it a bit<br>
 https://yashkolambekar.github.io/markscounter
